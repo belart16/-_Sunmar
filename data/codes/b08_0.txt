@@ -1,0 +1,228 @@
+<style>
+    .slider__slide.swiper-slide {
+        background-color: #fff;
+        border-radius: 20px;
+        flex-direction: column;
+        height: auto;
+        display: flex
+    }
+    
+    .slider__info {
+        background-color: #f5f5f8;
+        border-radius: 0 0 20px 20px;
+        flex: 1;
+        padding: 16px 24px
+    }
+    
+    .slider__img {
+        object-fit: cover;
+        object-position: center;
+        border-radius: 20px 20px 0 0;
+        height: 164px;
+        display: flex
+    }
+    
+    .slider__title {
+        margin-bottom: 8px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px
+    }
+    
+    .slider__prev {
+        left: -40px;
+        transform: translate(-50%, -50%)
+    }
+    
+    .slider__next {
+        right: -40px;
+        transform: translate(50%, -50%)
+    }
+    
+    .slider__prev, .slider__next {
+        z-index: 1;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: #fff;
+        border-radius: 40px;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        position: absolute;
+        top: 50%;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .1)
+    }
+    
+    @media screen and (max-width: 768px) {
+        .slider__prev, .slider__next {
+            display: none
+        }
+    }
+    
+    .slider-block {
+        position: relative;
+    }
+    
+    .slider-block--locked .slider__prev,
+    .slider-block--locked .slider__next,
+    .slider-block--locked .swiper-pagination {
+        display: none
+    }
+</style>
+
+<div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</div>
+
+<section class="sunmar">
+    <article>
+        <div class="wrapper mt-1">
+            <h2 class="title-2 mb-16 text-center">
+                Что посмотреть в Стамбуле?
+            </h2>
+            <div class="slider-block" data-per-view="3">
+                <div class="swiper slider">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide slider__slide">
+                            <img class="slider__img" src="https://b2ccdn.sunmar.ru/content/img/turkey/alachaty_oteli-turtsii_premium.webp">
+                            <div class="slider__info">
+                                <h4 class="slider__title text-center">
+                                    Софийский собор (Айя-София)
+                                </h4>
+                                <p class="text">
+                                    Главная святыня христианства, переоборудованная в мечеть после захвата Константинополя. Здесь можно увидеть остатки минаретов, великолепную мозаику и панно с арабской вязью.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide slider__slide">
+                            <img class="slider__img" src="https://b2ccdn.sunmar.ru/content/img/turkey/_Land%20of%20Legends__1_11zon.jpg">
+                            <div class="slider__info">
+                                <h4 class="slider__title text-center">
+                                    Голубая мечеть
+                                </h4>
+                                <p class="text">
+                                    Главная действующая мечеть Стамбула. Внутри мечети находится 260 окон.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide slider__slide">
+                            <img class="slider__img" src="https://b2ccdn.sunmar.ru/content/img/turkey/Termessos_6_11zon.jpg">
+                            <div class="slider__info">
+                                <h4 class="slider__title text-center">
+                                    Дворец Топкапы
+                                </h4>
+                                <p class="text">
+                                    Комплекс из 4 дворов — главная резиденция правителей. Здесь можно увидеть древнюю византийскую церковь Святой Ирины, опочивальни и гарем султанов.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide slider__slide">
+                            <img class="slider__img" src="https://b2ccdn.sunmar.ru/content/img/turkey/attractions_turkey_alanya.webp">
+                            <div class="slider__info">
+                                <h4 class="slider__title text-center">
+                                    Долмабахче
+                                </h4>
+                                <p class="text">
+                                    Дворец в стиле барокко, напоминающий Эрмитаж.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide slider__slide">
+                            <img class="slider__img" src="https://b2ccdn.sunmar.ru/content/img/turkey/antalya_tury-turkey-na-7-dney.webp">
+                            <div class="slider__info">
+                                <h4 class="slider__title text-center">
+                                    Галатская башня
+                                </h4>
+                                <p class="text">
+                                    Символ города. Все желающие могут подняться и насладиться потрясающим видом на Босфор и Золотой Рог.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__pagination swiper-pagination"></div>
+                </div>
+                <div class="slider__next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.64645 3.64645C5.45118 3.84171 5.45118 4.15829 5.64645 4.35355L9.29289 8L5.64645 11.6464C5.45118 11.8417 5.45118 12.1583 5.64645 12.3536C5.84171 12.5488 6.15829 12.5488 6.35355 12.3536L10.3536 8.35355C10.5488 8.15829 10.5488 7.84171 10.3536 7.64645L6.35355 3.64645C6.15829 3.45118 5.84171 3.45118 5.64645 3.64645Z" fill="#535353"></path>
+                    </svg>
+                </div>
+                <div class="slider__prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3536 3.64645C10.5488 3.84171 10.5488 4.15829 10.3536 4.35355L6.70711 8L10.3536 11.6464C10.5488 11.8417 10.5488 12.1583 10.3536 12.3536C10.1583 12.5488 9.84171 12.5488 9.64645 12.3536L5.64645 8.35355C5.45118 8.15829 5.45118 7.84171 5.64645 7.64645L9.64645 3.64645C9.84171 3.45118 10.1583 3.45118 10.3536 3.64645Z" fill="#535353"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    async function hostReactAppReady(
+        selector = "#__next > div",
+        timeout = 500,
+    ) {
+        return new Promise((resolve) => {
+            const waiter = () => {
+                const host_el = document.querySelector(selector);
+                if (host_el?.getBoundingClientRect().height) {
+                    resolve();
+                } else {
+                    setTimeout(waiter, timeout);
+                }
+            };
+            waiter();
+        });
+    }
+
+    hostReactAppReady().then(() => {
+        document.querySelectorAll(".slider-block").forEach((block) => {
+            const swiperEl = block.querySelector(".swiper");
+            if (!swiperEl) return;
+            const perView = parseInt(block.dataset.perView || "3", 10);
+            const slidesCount = swiperEl.querySelectorAll(".swiper-slide").length;
+            const swiper = new Swiper(swiperEl, {
+                slidesPerView: 1,
+                spaceBetween: 24,
+                loop: slidesCount >= perView * 2,
+                watchOverflow: true,
+                breakpoints: {
+                    768: {
+                        slidesPerView: Math.min(2, perView),
+                        spaceBetween: 24,
+                    },
+                    1024: {
+                        slidesPerView: perView,
+                        spaceBetween: 24,
+                    },
+                },
+                pagination: {
+                    el: block.querySelector(".swiper-pagination"),
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: block.querySelector(".slider__next"),
+                    prevEl: block.querySelector(".slider__prev"),
+                },
+                on: {
+                    lock() {
+                        block.classList.add("slider-block--locked");
+                    },
+                    unlock() {
+                        block.classList.remove("slider-block--locked");
+                    },
+                },
+            });
+            block.classList.toggle("slider-block--locked", swiper.isLocked);
+        });
+    });
+</script>

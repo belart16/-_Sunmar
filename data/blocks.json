@@ -1,0 +1,190 @@
+{
+  "title": "Справочник кода — Sunmar",
+  "subtitle_html": "Конструктор страниц Sunmar &nbsp;·&nbsp; <span class=\"count\">{TOTAL} блоков</span> &nbsp;·&nbsp; нажмите «Копировать» и вставьте блок в нужный виджет CMS.",
+  "groups": [
+    {
+      "title": "Глобальный слой",
+      "blocks": [
+        {
+          "slug": "b00",
+          "name": "Общие стили",
+          "purpose": "Глобальный слой. Вставляется на каждую страницу первым, пользователю не виден.",
+          "variants": [
+            {
+              "vslug": "b00_0",
+              "label": null,
+              "code": "codes/b00_0.txt",
+              "preview": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Каркас страницы",
+      "blocks": [
+        {
+          "slug": "b01",
+          "name": "Баннер",
+          "purpose": "Главный блок с картинкой и заголовком вверху страницы.",
+          "variants": [
+            {
+              "vslug": "b01_0",
+              "label": null,
+              "code": "codes/b01_0.txt",
+              "preview": "b01_0.png"
+            }
+          ]
+        },
+        {
+          "slug": "b02",
+          "name": "Навигация",
+          "purpose": "Якорное меню по разделам страницы.",
+          "variants": [
+            {
+              "vslug": "b02_0",
+              "label": null,
+              "code": "codes/b02_0.txt",
+              "preview": "b02_0.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Содержание",
+      "blocks": [
+        {
+          "slug": "b03",
+          "name": "Текстовый блок",
+          "purpose": "Свободный текст с кнопкой.",
+          "variants": [
+            {
+              "vslug": "b03_0",
+              "label": null,
+              "code": "codes/b03_0.txt",
+              "preview": "b03_0.png"
+            }
+          ]
+        },
+        {
+          "slug": "b04",
+          "name": "Картинка с текстом",
+          "purpose": "Блок «текст + картинка» рядом.",
+          "variants": [
+            {
+              "vslug": "b04_0",
+              "label": null,
+              "code": "codes/b04_0.txt",
+              "preview": "b04_0.png"
+            }
+          ]
+        },
+        {
+          "slug": "b05",
+          "name": "Карточки",
+          "purpose": "Карточки с картинкой, заголовком и текстом.",
+          "variants": [
+            {
+              "vslug": "b05_0",
+              "label": null,
+              "code": "codes/b05_0.txt",
+              "preview": "b05_0.png"
+            }
+          ]
+        },
+        {
+          "slug": "b06",
+          "name": "Преимущества",
+          "purpose": "Плашки-преимущества.",
+          "variants": [
+            {
+              "vslug": "b06_0",
+              "label": null,
+              "code": "codes/b06_0.txt",
+              "preview": "b06_0.png"
+            }
+          ]
+        },
+        {
+          "slug": "b07",
+          "name": "Сетка картинок",
+          "purpose": "Сетка изображений.",
+          "variants": [
+            {
+              "vslug": "b07_0",
+              "label": null,
+              "code": "codes/b07_0.txt",
+              "preview": "b07_0.png"
+            }
+          ]
+        },
+        {
+          "slug": "b08",
+          "name": "Слайдер",
+          "purpose": "Горизонтальная карусель карточек (Swiper).",
+          "variants": [
+            {
+              "vslug": "b08_0",
+              "label": null,
+              "code": "codes/b08_0.txt",
+              "preview": "b08_0.png"
+            }
+          ]
+        },
+        {
+          "slug": "b09",
+          "name": "Табы",
+          "purpose": "Переключение контента по вкладкам.",
+          "variants": [
+            {
+              "vslug": "b09_0",
+              "label": null,
+              "code": "codes/b09_0.txt",
+              "preview": "b09_0.png"
+            }
+          ]
+        },
+        {
+          "slug": "b10",
+          "name": "Климат",
+          "purpose": "Блок погоды и климата.",
+          "variants": [
+            {
+              "vslug": "b10_0",
+              "label": null,
+              "code": "codes/b10_0.txt",
+              "preview": "b10_0.png"
+            }
+          ]
+        },
+        {
+          "slug": "b11",
+          "name": "Таблица",
+          "purpose": "Сравнительная таблица.",
+          "variants": [
+            {
+              "vslug": "b11_0",
+              "label": null,
+              "code": "codes/b11_0.txt",
+              "preview": "b11_0.png"
+            }
+          ]
+        },
+        {
+          "slug": "b12",
+          "name": "SEO ссылки",
+          "purpose": "Перелинковка: колонки списков ссылок.",
+          "variants": [
+            {
+              "vslug": "b12_0",
+              "label": null,
+              "code": "codes/b12_0.txt",
+              "preview": "b12_0.png"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

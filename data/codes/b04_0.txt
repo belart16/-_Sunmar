@@ -1,0 +1,137 @@
+<style>
+    .panel {
+        background-color: #fff;
+        border-radius: 20px;
+        min-height: 184px;
+        margin-top: 32px;
+        display: flex
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .panel {
+            flex-direction: column
+        }
+    }
+    
+    .panel__col {
+        flex: 1;
+        align-items: center;
+        display: flex
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .panel__col {
+            order: 2
+        }
+    }
+    
+    .panel__info {
+        padding: 28px 24px
+    }
+    
+    .panel__img {
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0 20px 20px 0;
+        flex: 1;
+        display: flex;
+        position: relative
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .panel__img {
+            border-radius: 20px 20px 0 0;
+            order: 1;
+            min-height: 280px
+        }
+    }
+    
+    .panel--reverse {
+        flex-direction: row-reverse
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .panel--reverse {
+            flex-direction: column
+        }
+    }
+    
+    .panel--reverse .panel__img {
+        border-radius: 20px 0 0 20px
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .panel--reverse .panel__img {
+            border-radius: 20px 20px 0 0
+        }
+    }
+    
+    .panel--reverse .panel__label {
+        right: unset;
+        left: 16px
+    }
+    
+    .panel__buttons {
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 24px;
+        display: flex
+    }
+    
+    .panel__label {
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 16px;
+        align-items: center;
+        gap: 8px;
+        height: 40px;
+        padding-left: 12px;
+        padding-right: 12px;
+        display: flex;
+        position: absolute;
+        top: 16px;
+        right: 16px
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .panel__label {
+            right: unset;
+            left: 16px
+        }
+    }
+</style>
+
+<section class="sunmar">
+    <article>
+        <div class="wrapper mt-1">
+            <h2 class="title-2 mb-8 text-center"> Что делать в Стамбуле? </h2>
+            <p class="text text-center"> Большинство достопримечательностей вы сможете увидеть в рамках наших экскурсионных туров в Стамбул. Мы предлагаем увлекательные путешествия с опытными гидами и полным погружением в историю города. </p>
+
+            <div class="panel">
+                <div class="panel__col">
+                    <div class="panel__info">
+                        <h2 class="title-2 mb-16"> Заголовок </h2>
+                        <p class="text"> В любое время года можно отправиться на Принцевы острова. Там туристов ждут не только живописные пейзажи, но и комфортабельные отели, рестораны и кафе. В летний сезон можно искупаться в тёплых водах Чёрного моря, а в прохладную погоду, даже зимой, – с комфортом прогуляться по колоритным улочкам и сделать прекрасные фотографии. </p>
+                        <div class="panel__buttons"><a href="" class="sunmar-button"> Забронировать тур в Турцию </a> <a href="" class="sunmar-button sunmar-button--white"> Горящие туры </a></div>
+                    </div>
+                </div>
+                <div class="panel__img" style="background-image:url(https://b2ccdn.sunmar.ru/content/img/turkey/1354х450_ela_excellence_main_2.jpg)">
+                </div>
+            </div>
+
+            <div class="panel panel--reverse">
+                <div class="panel__col">
+                    <div class="panel__info">
+                        <h2 class="title-2 mb-16"> Заголовок </h2>
+                        <p class="text"> Посетить район Султанахмет, который внесён в список культурного наследия ЮНЕСКО. Здесь можно увидеть Софийский собор, Голубую мечеть, площадь Ипподром. </p>
+                        <div class="panel__buttons"><a href="" class="sunmar-button"> Забронировать тур в Турцию </a> <a href="" class="sunmar-button sunmar-button--white"> Горящие туры </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel__img" style="background-image:url(https://b2ccdn.sunmar.ru/content/img/turkey/1354х450_ela_excellence_main.jpg)">
+                </div>
+            </div>
+
+        </div>
+    </article>
+</section>

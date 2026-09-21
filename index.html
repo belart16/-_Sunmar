@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Справочник кода · библиотека блоков · Sunmar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div class="wrap">
+  <aside id="sidebar">
+    <button class="nav-close" id="nav-close" type="button" aria-label="Закрыть меню"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    <img class="logo" alt="Sunmar — справочник кода" src="assets/sunmar_logo.svg">
+    <input class="search" id="search" type="search" placeholder="Поиск блока…" autocomplete="off">
+    <nav id="nav"></nav>
+  </aside>
+  <main>
+    <div class="hero">
+      <h1 id="hero-title">Справочник кода — Sunmar</h1>
+      <p id="hero-subtitle"></p>
+    </div>
+    <div id="blocks-root"></div>
+    <div class="empty" id="empty">Ничего не найдено.</div>
+  </main>
+</div>
+
+<button class="nav-fab" id="nav-toggle" type="button" aria-label="Открыть навигацию и поиск" aria-controls="sidebar" aria-expanded="false">
+  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" aria-hidden="true">
+    <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </svg>
+</button>
+<div class="nav-backdrop" id="nav-backdrop"></div>
+<div class="pager-counter" id="pager-counter" aria-hidden="true"></div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

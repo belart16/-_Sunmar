@@ -1,0 +1,38 @@
+<style>
+    .grid-hotels {
+        grid-gap: 32px;
+        grid-template-rows:repeat(2, 1fr);
+        grid-template-columns:repeat(3, 1fr);
+        display: grid
+    }
+    
+    .grid-hotels__item {
+        display: flex
+    }
+    
+    .grid-hotels__item img {
+        border-radius: 16px
+    }
+    
+    .grid-hotels__item:first-child {
+        grid-area: span 2/span 2
+    }
+    
+    .grid-hotels + .text {
+        margin-top: 28px
+    }
+</style>
+
+<section class="sunmar">
+    <article>
+        <div class="wrapper mt-1">
+            <h2 class="title-2 mb-16 text-center"> Отели </h2>
+            <div class="grid-hotels">
+                <div class="grid-hotels__item"><img src="https://b2ccdn.sunmar.ru/content/img/turkey/636511158637757262.jpg"></div>
+                <div class="grid-hotels__item"><img src="https://b2ccdn.sunmar.ru/content/img/turkey/636584534753178338.jpg"></div>
+                <div class="grid-hotels__item"><img src="https://b2ccdn.sunmar.ru/content/img/turkey/637523606081217339.jpg"></div>
+            </div>
+            <p class="text text-center"> Анапа – одно из популярных летних направлений для российских туристов. Из-за того, что отдых там временно невозможен, многие задаются вопросом: куда теперь отправляться на море? В России можно найти отдых на любой вкус, в том числе и пляжный. Приморские курорты привлекают туристов со всей страны и даже из зарубежья. Каждый из них имеет яркую индивидуальность, и сейчас мы расскажем, куда можно отправиться в отпуск вместо Анапы. </p>
+        </div>
+    </article>
+</section>

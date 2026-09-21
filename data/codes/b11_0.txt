@@ -1,0 +1,113 @@
+<style>
+    .cmp-table__wrap {
+        border-radius: 20px;
+        overflow: hidden;
+        overflow-x: auto
+    }
+    
+    .cmp-table {
+        width: 100%;
+        min-width: 640px;
+        border-collapse: collapse;
+        background-color: #fff
+    }
+    
+    .cmp-table thead {
+        background-color: #d8242a
+    }
+    
+    .cmp-table th {
+        color: #fff;
+        text-align: left;
+        padding: 16px 20px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px
+    }
+    
+    .cmp-table td {
+        padding: 16px 20px;
+        font-size: 16px;
+        line-height: 24px;
+        border-top: 1px solid rgba(0, 0, 0, .06);
+        vertical-align: top
+    }
+    
+    .cmp-table tbody tr:nth-child(even) {
+        background-color: #f5f5f8
+    }
+    
+    .cmp-table td:first-child {
+        color: #d8242a;
+        font-weight: 600
+    }
+    
+    .cmp-list {
+        padding-left: 20px
+    }
+    
+    .cmp-list li + li {
+        margin-top: 8px
+    }
+    
+    @media screen and (max-width: 768px) {
+        .cmp-table th,
+        .cmp-table td {
+            padding: 12px 14px;
+            font-size: 14px;
+            line-height: 20px
+        }
+    }
+</style>
+
+<section class="sunmar">
+    <article>
+        <div class="wrapper mt-1">
+            <h2 class="title-2 mb-8 text-center"> Хургада или Шарм-эль-Шейх? Выбираем курорт </h2>
+            <p class="text text-center mb-16"> Оба курорта отличные, но разные. Вот главные отличия: </p>
+            <div class="cmp-table__wrap">
+                <table class="cmp-table">
+                    <thead>
+                        <tr>
+                            <th>Критерий</th>
+                            <th>Хургада</th>
+                            <th>Шарм-эль-Шейх</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Тип отдыха</td>
+                            <td>Семейный, бюджетный, много аквапарков</td>
+                            <td>Премиальный, спокойный, дайвинг</td>
+                        </tr>
+                        <tr>
+                            <td>Пляж</td>
+                            <td>В основном песчаный, местами кораллы</td>
+                            <td>Коралловые рифы прямо с берега, песка меньше</td>
+                        </tr>
+                        <tr>
+                            <td>Подводный мир</td>
+                            <td>Хороший (кораллы + рыбки)</td>
+                            <td>Очень богатый, один из лучших в мире</td>
+                        </tr>
+                        <tr>
+                            <td>Цены</td>
+                            <td>Ниже</td>
+                            <td>Выше</td>
+                        </tr>
+                        <tr>
+                            <td>Ночная жизнь</td>
+                            <td>Есть бары, клубы, дискотеки</td>
+                            <td>Спокойная, больше рестораны и променады</td>
+                        </tr>
+                        <tr>
+                            <td>Расстояние от аэропорта</td>
+                            <td>10–30 минут (основные отели рядом)</td>
+                            <td>20–40 минут до Наама-Бей, дальше до дальних бухт</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </article>
+</section>

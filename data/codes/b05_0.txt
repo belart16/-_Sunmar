@@ -1,0 +1,60 @@
+<style>
+    .card__info {
+        background-color: #f5f5f8;
+        border-radius: 0 0 20px 20px;
+        flex-direction: column;
+        align-items: center;
+        padding: 16px 24px;
+        display: flex
+    }
+    
+    .card__img {
+        object-fit: cover;
+        object-position: center;
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        height: 250px;
+        display: flex
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .card__img {
+            height: 240px
+        }
+    }
+</style>
+
+<section class="sunmar">
+    <article>
+        <div class="wrapper mt-1">
+            <h2 class="title-2 mb-16 text-center"> Активные развлечения </h2>
+            <div class="grid-auto grid-auto--3">
+
+                <div class="card__item"><img class="card__img" src="https://b2ccdn.sunmar.ru/content/img/turkey/2_.webp">
+                    <div class="card__info">
+                        <h4 class="title-5 mb-8"> SEVEN SEAS HOTEL LIFE 5* </h4>
+                        <p class="text"> Настоящий магнит для туристов. Здесь есть все: отели «все включено», ночные развлечения </p>
+                        <a href="" class="sunmar-button mt-16"> Цены </a>
+                    </div>
+                </div>
+
+                <div class="card__item"><img class="card__img" src="https://b2ccdn.sunmar.ru/content/img/turkey/2u89suq0dqgww.jpg">
+                    <div class="card__info">
+                        <h4 class="title-5 mb-8"> SEVEN SEAS HOTEL LIFE 5* </h4>
+                        <p class="text"> Настоящий магнит для туристов. Здесь есть все: отели «все включено», ночные развлечения </p>
+                        <a href="" class="sunmar-button mt-16"> Цены </a>
+                    </div>
+                </div>
+
+                <div class="card__item"><img class="card__img" src="https://b2ccdn.sunmar.ru/content/img/turkey/3_.webp">
+                    <div class="card__info">
+                        <h4 class="title-5 mb-8"> SEVEN SEAS HOTEL LIFE 5* </h4>
+                        <p class="text"> Настоящий магнит для туристов. Здесь есть все: отели «все включено», ночные развлечения </p>
+                        <a href="" class="sunmar-button mt-16"> Цены </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </article>
+</section>

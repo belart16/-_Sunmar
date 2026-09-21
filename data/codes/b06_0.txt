@@ -1,0 +1,161 @@
+<style>
+    .sunmar--benefits {
+        background-color: #f5f5f8;
+        margin-top: 40px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        position: relative
+    }
+    
+    .sunmar--benefits .wrapper {
+        z-index: 1
+    }
+    
+    .sunmar--benefits:before {
+        content: "";
+        z-index: 0;
+        background-image: url(//b2ccdn.sunmar.ru/content/landing-pages/cosmos/bg_left.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 482px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0
+    }
+    
+    @media screen and (max-width: 768px) {
+        .sunmar--benefits:before {
+            background-image: url(//b2ccdn.sunmar.ru/content/landing-pages/cosmos/bg_left_m.webp);
+            background-size: cover;
+            width: 366px;
+            left: -170px
+        }
+    }
+    
+    .sunmar--benefits:after {
+        content: "";
+        z-index: 0;
+        background-image: url(//b2ccdn.sunmar.ru/content/landing-pages/cosmos/bg_right.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 482px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0
+    }
+    
+    @media screen and (max-width: 768px) {
+        .sunmar--benefits:after {
+            background-image: url(//b2ccdn.sunmar.ru/content/landing-pages/cosmos/bg_right_m.webp);
+            background-size: cover;
+            width: 265px;
+            right: -110px
+        }
+    }
+    
+    .pad {
+        grid-gap: 24px;
+        grid-template-columns:repeat(6, 1fr);
+        grid-auto-rows: 107px;
+        display: grid
+    }
+    
+    .pad--4 .pad__block {
+        grid-column: span 3
+    }
+    
+    @media screen and (max-width: 768px) {
+        .pad--4 .pad__block {
+            grid-column: auto
+        }
+    }
+    
+    .pad--5 .pad__block:nth-child(-n+2) {
+        grid-column: span 3
+    }
+    
+    @media screen and (max-width: 768px) {
+        .pad--5 .pad__block:nth-child(-n+2) {
+            grid-column: auto
+        }
+    }
+    
+    .pad--5 .pad__block:nth-last-child(-n+3) {
+        grid-column: span 2
+    }
+    
+    @media screen and (max-width: 768px) {
+        .pad--5 .pad__block:nth-last-child(-n+3) {
+            grid-column: auto
+        }
+    }
+    
+    .pad--6 .pad__block {
+        grid-column: span 2
+    }
+    
+    @media screen and (max-width: 768px) {
+        .pad--6 .pad__block {
+            grid-column: auto
+        }
+    
+        .pad {
+            grid-template-columns:auto
+        }
+    }
+    
+    .pad__block {
+        background-color: #fff;
+        border-radius: 16px;
+        justify-content: center;
+        align-items: center;
+        padding-left: 32px;
+        padding-right: 32px;
+        display: flex
+    }
+</style>
+
+<section class="sunmar sunmar--benefits">
+    <article>
+        <div class="wrapper">
+            <h2 class="title-2 mb-24 text-center">
+                Преимущества
+            </h2>
+            <div class="pad pad--5">
+
+                <div class="pad__block">
+                    <p class="text">
+                        Местные сладости: пахлава, рахат-лукум, пишмание
+                    </p>
+                </div>
+
+                <div class="pad__block">
+                    <p class="text">
+                        Турецкий чай
+                    </p>
+                </div>
+
+                <div class="pad__block">
+                    <p class="text">
+                        Изделия из кожи
+                    </p>
+                </div>
+
+                <div class="pad__block">
+                    <p class="text">
+                        Антиквариат
+                    </p>
+                </div>
+
+                <div class="pad__block">
+                    <p class="text">
+                        Ювелирные украшения
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </article>
+</section>

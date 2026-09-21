@@ -1,0 +1,284 @@
+<style>
+    .mb-24 {
+        margin-bottom: 24px
+    }
+     
+    .mb-16 {
+        margin-bottom: 16px
+    }
+     
+    .mb-8 {
+        margin-bottom: 8px
+    }
+     
+    .mb-4 {
+        margin-bottom: 4px
+    }
+     
+    .mt-24 {
+      margin-top: 24px;
+    }
+     
+    .mt-16 {
+        margin-top: 16px
+    }
+     
+    .mt-8 {
+        margin-top: 8px
+    }
+    
+    .mt-1 {
+        margin-top: 40px
+    }
+    
+    * {
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        margin: 0;
+        padding: 0
+    }
+     
+    h1, h2, h3, h4, h5, h6, p, a {
+        margin: 0;
+        padding: 0
+    }
+    
+    .sunmar .banner__title {
+        color: #fff;
+        margin-bottom: 24px;
+        font-size: 56px !important;
+        font-weight: 600 !important;
+        line-height: 60px !important
+    }
+    
+    @media screen and (max-width: 1280px) {
+        .sunmar .banner__title {
+            font-size: 40px !important;
+            line-height: 48px !important
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .sunmar .banner__title {
+            font-size: 32px !important;
+            line-height: 40px !important
+        }
+    }
+    
+    .sunmar .banner__subtitle {
+        color: #fff;
+        font-size: 16px;
+        line-height: 20px
+    }
+    
+    .sunmar .banner__button {
+        color: #fff;
+        background: linear-gradient(245deg, #d8242a 15.84%, #e7317d 84.16%);
+        border: 1px solid transparent;
+        border-radius: 48px;
+        align-items: center;
+        width: fit-content;
+        height: 48px;
+        margin-top: 24px;
+        padding-left: 32px;
+        padding-right: 32px;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: none;
+        display: flex
+    }
+    
+    .sunmar .banner__button:hover {
+        background: linear-gradient(90deg, #d8242a 15.84%, #e7317d 84.16%)
+    }
+    
+    .sunmar .title-2 {
+        font-size: 40px !important;
+        font-weight: 600 !important;
+        line-height: 44px !important
+    }
+    
+    @media screen and (max-width: 768px) {
+        .sunmar .title-2 {
+            font-size: 32px !important;
+            line-height: 36px !important
+        }
+    }
+    
+    .sunmar .title-4 {
+        font-size: 28px;
+        line-height: 32px
+    }
+    
+    .sunmar .title-5 {
+        font-size: 24px;
+        line-height: 28px
+    }
+    
+    .sunmar .slider__pagination.swiper-pagination.swiper-pagination-horizontal {
+        bottom: 0
+    }
+    
+    .sunmar .slider__pagination.swiper-pagination .swiper-pagination-bullet {
+        opacity: 1;
+        background-color: #afafaf;
+        width: 10px;
+        height: 10px
+    }
+    
+    .sunmar .slider__pagination.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: #0e2855
+    }
+    
+    @media screen and (max-width: 428px) {
+        .sunmar .wrapper:has(.banner) {
+            padding-left: 0;
+            padding-right: 0
+        }
+    }
+    
+    a.sunmar-button {
+        color: #fff;
+        background: linear-gradient(245deg, #d8242a 15.84%, #e7317d 84.16%);
+        border-radius: 48px;
+        align-items: center;
+        width: fit-content;
+        height: 48px;
+        padding-left: 32px;
+        padding-right: 32px;
+        font-size: 16px;
+        text-decoration: none;
+        display: flex
+    }
+    
+    a.sunmar-button:hover {
+        background: linear-gradient(90deg, #d8242a 15.84%, #e7317d 84.16%)
+    }
+    
+    a.sunmar-button--white {
+        color: inherit;
+        background: #fff;
+        border: 1px solid #d8242a
+    }
+    
+    a.sunmar-button--white:hover {
+        color: #fff
+    }
+    
+    .bg-white {
+        background-color: #fff
+    }
+    
+    .bg-grey {
+        background-color: #f5f5f8
+    }
+    
+    .slider.swiper:not(:has(.swiper-pagination-lock)) {
+        padding-bottom: 24px
+    }
+    
+    .layout-container-limit:has(section.sunmar) {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important
+    }
+    
+    section > article {
+        max-width: 1528px;
+        margin: auto
+    }
+    
+    section > article .wrapper {
+        padding: 12px 80px;
+        position: relative
+    }
+    
+    @media screen and (max-width: 768px) {
+        section > article .wrapper {
+            padding: 30px 16px
+        }
+    }
+    
+    section.full-width > article {
+        max-width: 100%
+    }
+    
+    section.full-width > article .wrapper {
+        padding-left: 0;
+        padding-right: 0
+    }
+    
+    @media screen and (max-width: 428px) {
+        section.full-width-428 > article .wrapper {
+            padding-left: 0;
+            padding-right: 0
+        }
+    }
+    
+    section:has(.banner) .wrapper {
+        padding-bottom: 0
+    }
+    
+    section:has(.banner.banner--text) .wrapper {
+        padding-bottom: 40px
+    }
+    
+    .ant-col:has(section.sunmar) > div {
+        padding: 0
+    }
+    
+    .text {
+        font-size: 16px;
+        line-height: 24px
+    }
+    
+    .text-center {
+         text-align: center
+     }
+        
+    .flex-center {
+         display: flex;
+         justify-content: center;
+     }
+    
+    .font-bold {
+        font-weight: 600;
+    }
+    
+    .text + .text {
+        margin-top: 8px
+    }
+    
+    /* Универсальная сетка (grid-auto) */
+    
+    .grid-auto {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 24px;
+    }
+    
+    .grid-auto--1  > * { grid-column: span 12; }
+    .grid-auto--2  > * { grid-column: span 6; }
+    .grid-auto--3  > * { grid-column: span 4; }
+    .grid-auto--4  > * { grid-column: span 3; }
+    .grid-auto--5  > *:nth-child(-n+3)      { grid-column: span 4; }
+    .grid-auto--5  > *:nth-last-child(-n+2) { grid-column: span 6; }
+    .grid-auto--6  > * { grid-column: span 4; }
+    .grid-auto--7  > *:nth-child(-n+4)      { grid-column: span 3; }
+    .grid-auto--7  > *:nth-last-child(-n+3) { grid-column: span 4; }
+    .grid-auto--8  > * { grid-column: span 3; }
+    .grid-auto--9  > * { grid-column: span 4; }
+    .grid-auto--10 > *:nth-child(-n+4)      { grid-column: span 3; }
+    .grid-auto--10 > *:nth-last-child(-n+6) { grid-column: span 4; }
+    
+    @media screen and (max-width: 1024px) {
+        .grid-auto { grid-template-columns: repeat(2, 1fr); }
+        .grid-auto > * { grid-column: auto !important; }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .grid-auto { grid-template-columns: 1fr; }
+    }
+    
+    .wrapper > .grid-auto:first-child { margin-top: 0; }
+</style>

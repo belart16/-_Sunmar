@@ -1,0 +1,88 @@
+<style>
+    .banner {
+        background-image: url(https://b2ccdn.sunmar.ru/content/img/turkey/1.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        width: 100%;
+        height: 500px;
+        margin-top: 24px
+    }
+    @media screen and (max-width: 1280px) {
+    .banner {
+        height: 420px
+    }
+    }
+    @media screen and (max-width: 1024px) {
+    .banner {
+        height: 380px
+    }
+    }
+    @media screen and (max-width: 428px) {
+    .banner {
+        background-image: url(https://b2ccdn.sunmar.ru/content/img/turkey/1.webp);
+        height: 520px;
+        border-radius: 0px;
+    }
+    }
+    .banner__content {
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding-left: 100px;
+        padding-right: 64px;
+        display: flex
+    }
+    @media screen and (max-width: 768px) {
+    .banner__content {
+        padding-left: 32px;
+        padding-right: 32px
+    }
+    }
+    @media screen and (max-width: 428px) {
+    .banner__content {
+        justify-content: flex-start;
+        padding: 24px
+    }
+    }
+    @media only screen and (min-width: 420px) and (max-width: 440px) and (min-height: 930px) and (max-height: 940px) {
+    .banner {
+        background-image: url(https://b2ccdn.sunmar.ru/content/img/turkey/1.webp);
+        height: 520px;
+        border-radius: 0px;
+    }
+    }
+    @media only screen and (min-width: 420px) and (max-width: 440px) and (min-height: 930px) and (max-height: 940px) {
+    .banner__content {
+        height: 50%;
+    }
+    }
+    @media only screen and (device-width: 430px) and (device-height: 932px) {
+    .sunmar .wrapper:has(.banner) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    }
+</style>
+
+<section class="sunmar">
+    <article>
+        <div class="wrapper">
+            <div class="banner">
+                <div class="banner__content">
+                    <h1 class="banner__title">
+                        Туры в Стамбул 2025
+                    </h1>
+                    <p class="banner__subtitle">
+                        Выгодный отдых в сентябре
+                    </p>
+                    <a href="#anchor-6" class="banner__button">
+                        Выбрать тур
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
